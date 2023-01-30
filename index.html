@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/converter.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="converter">
+        <div class="converter__block">
+            <div class="converter__input-block">
+                <label for="usdInput">Рубли</label>
+                <input type="number" class="converter__input-rub" id="usdInput" min="0">
+            </div>
+            <span>→</span>
+            <div class="converter__input-block">
+                <div class="select-block">
+                    <select name="currency" class="converter__currency">
+                        <option value="usd" selected>Доллары</option>
+                        <option value="eur">Евро</option>
+                    </select>
+                </div>
+                <input type="text" class="converter__input-result" readonly>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
